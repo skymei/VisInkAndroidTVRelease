@@ -1,12 +1,11 @@
-<p align="center">
-  <img src="docs/logo.png" width="92" alt="VisInk" />
-</p>
+<h1 align="center">
+  <img src="docs/logo.png" width="48" alt="VisInk" valign="middle" />
+  VisInk
+</h1>
 
 <p align="center">
   <a href="README.md">English</a> · <strong>中文</strong>
 </p>
-
-<h1 align="center">VisInk</h1>
 
 <p align="center">
   面向 Android 电视的 Emby 客户端。<br/>

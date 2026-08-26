@@ -1,12 +1,11 @@
-<p align="center">
-  <img src="docs/logo.png" width="92" alt="VisInk" />
-</p>
+<h1 align="center">
+  <img src="docs/logo.png" width="48" alt="VisInk" valign="middle" />
+  VisInk
+</h1>
 
 <p align="center">
   <strong>English</strong> · <a href="README.zh.md">中文</a>
 </p>
-
-<h1 align="center">VisInk</h1>
 
 <p align="center">
   Multimedia clients for your own library.<br/>
