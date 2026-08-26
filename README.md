@@ -9,12 +9,8 @@
 <h1 align="center">VisInk</h1>
 
 <p align="center">
-  <em>Multimedia clients for your own library.</em>
-</p>
-
-<p align="center">
-  VisInk builds clients that sit on your television, talk to <strong>your</strong> media server, and stay out of the way of the film.<br/>
-  This repository is the <strong>free Android TV distribution</strong> — signed APKs on GitHub Releases, not the Play Store, with no subscription and no in-app purchase.
+  Multimedia clients for your own library.<br/>
+  This repo is the <strong>free Android TV drop</strong> — sideload APKs, not Play Store, no subscription.
 </p>
 
 <p align="center">
@@ -51,33 +47,37 @@
 
 ---
 
-## What VisInk is
+VisInk is a client, not a streaming service. You run Emby; this app is the TV remote UI. APKs live on [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) (the tags), not on the default branch. Overlay-install to update. **Do not uninstall first** — that wipes saved servers and login.
 
-VisInk is a **multimedia client brand**. The product is the living-room remote experience: browse a private catalog, open a title, and play it on a television you already own. It is not a streaming service and it does not host your files. You bring an Emby server; VisInk brings the TV app.
-
-The Android TV client is built for Leanback televisions and a D-pad. It is given away from this repository.
-
-## What this repository is
-
-Packages do **not** live on the default branch. Each version is a GitHub Release / tag with three signed APKs. Feature notes for that version are on the tag.
+## Which APK
 
 | File | Use |
 |---|---|
-| `VisInk-*-armeabi-v7a.apk` | 32-bit ARM. **Prefer this on most TVs.** |
+| `VisInk-*-armeabi-v7a.apk` | 32-bit ARM. **Most TVs should use this.** |
 | `VisInk-*-arm64-v8a.apk` | 64-bit ARM |
-| `VisInk-*-universal.apk` | All ABIs, largest download — use if you are unsure |
+| `VisInk-*-universal.apk` | All ABIs, largest file. Use only if you are unsure. |
 
-Application ID is `com.skymei.visink`. Requires **Android TV (Leanback)** on **Android 7.0** or later.
+Package name: `com.skymei.visink`.
 
-Update by overlay-installing a newer build signed with the same key. **Do not uninstall first** — uninstalling wipes saved servers and the login on the device.
+## Android TV version and hardware
 
-## In the Android TV app
+| | Minimum | Recommended |
+|---|---|---|
+| System | Android TV / Google TV **7.0** (API 24) | Android TV / Google TV **12** or later |
+| Device | A TV or box with the Android TV launcher and a D-pad remote. Phones and tablets are not supported. | A living-room set or box you actually use with a remote, 1080p or 4K |
+| CPU | 32-bit ARM (`armeabi-v7a`) or 64-bit ARM (`arm64-v8a`) | Same as the TV: 32-bit box → v7a package; 64-bit box → arm64 package |
+| Video | A hardware decoder for common files (at least H.264) | Hardware decode for H.264 and HEVC so most libraries direct-play |
+| Network | Reach your Emby server from the TV | Wired or stable Wi-Fi to the server |
+| Storage | ~100 MB for an ABI build; ~250 MB for universal | Same; leave headroom for artwork cache |
 
-- Connect your Emby server, restore a session, and switch recent accounts
-- Home, library, search, movie / series / person details
+The UI is designed around 1080p Android TV. 4K sets work. This is not a phone APK.
+
+## In this version
+
+- Sign in to Emby, restore a session, switch recent servers and accounts
+- Welcome, Home, Library, Search, Search All
+- Movie / series details and person details; episode cards play immediately (no separate episode page)
 - Continue watching and favorites
-- Playback: direct first, device decode or libVLC when needed, server transcode last
-- Appearance, playback, search, and UI language in Settings
-- Languages: system, Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, French, German
-
-There is no Google Play listing, no Play billing, and no Android TV Top Shelf / system recommendations.
+- Playback: direct play first, then on-device decode or libVLC, then server transcode if needed — pause, progress, subtitles, audio, speed, next episode, media info
+- Settings: appearance, playback, search, language, About
+- Languages: System, Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, French, German

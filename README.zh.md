@@ -9,16 +9,12 @@
 <h1 align="center">VisInk</h1>
 
 <p align="center">
-  <em>为自己的片库准备的多媒体客户端。</em>
+  多媒体客户端，连你自己的片库。<br/>
+  这里是 <strong>Android 电视版的免费安装包</strong>，侧载即可，不上架商店，不收费。
 </p>
 
 <p align="center">
-  VisInk 做的是多媒体客户端：装在你的电视上，连<strong>你自己的</strong>媒体服务器，把注意力留给画面。<br/>
-  当前仓库是 <strong>Android TV 版本的免费派发仓</strong> —— 签名 APK 放在 GitHub Releases 上，不上 Play 商店，没有订阅，也没有内购。
-</p>
-
-<p align="center">
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><strong>下载最新版本</strong></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><strong>下载最新版</strong></a>
 </p>
 
 ---
@@ -51,33 +47,37 @@
 
 ---
 
-## VisInk 是什么
+VisInk 不提供片源。片在你的 Emby 上，电视上装这个客户端，用遥控器看。安装包在 [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases)（也就是各个 tag）里，默认分支没有 APK。更新请直接覆盖安装，**别先卸载**：卸了本机登录和服务器记录就没了。
 
-VisInk 是一个**多媒体客户端品牌**。产品是客厅里的遥控器体验：浏览自己的片库、打开一部作品、在已有的电视上播放。它不是流媒体平台，也不托管你的文件。你提供 Emby 服务器，VisInk 提供电视端应用。
+## 下哪个包
 
-Android TV 客户端面向 Leanback 电视和方向键，通过本仓库免费发放。
-
-## 本仓库是什么
-
-安装包**不放在默认分支**。每个版本对应一个 GitHub Release / tag，下面挂三份已签名 APK。该版本支持的功能写在 tag 说明里。
-
-| 文件 | 适用 |
+| 文件 | 什么时候用 |
 |---|---|
-| `VisInk-*-armeabi-v7a.apk` | 32 位 ARM。**大多数电视优先选这个。** |
+| `VisInk-*-armeabi-v7a.apk` | 32 位 ARM。**电视优先下这个。** |
 | `VisInk-*-arm64-v8a.apk` | 64 位 ARM |
-| `VisInk-*-universal.apk` | 含全部 ABI，体积最大；架构不确定时用 |
+| `VisInk-*-universal.apk` | 三种架构都打进去，体积最大。搞不清再选这个。 |
 
-包名是 `com.skymei.visink`。需要 **Android TV（Leanback）**，**Android 7.0** 及以上。
+包名：`com.skymei.visink`。
 
-覆盖安装即可更新，请用同一签名的新包。**不要先卸载再装** —— 卸载会清掉本机保存的服务器和登录态。
+## 系统版本和硬件
 
-## Android TV 里有什么
+| | 最低 | 推荐 |
+|---|---|---|
+| 系统 | Android TV / Google TV **7.0**（API 24） | Android TV / Google TV **12** 及以上 |
+| 设备 | 带电视桌面、能用方向键遥控器的电视或盒子。手机和平板装不了。 | 客厅里日常在用的电视或盒子，1080p 或 4K |
+| CPU | 32 位 ARM（`armeabi-v7a`）或 64 位 ARM（`arm64-v8a`） | 电视是 32 位就装 v7a 包，64 位就装 arm64 包 |
+| 解码 | 至少能硬解常见片源（H.264） | 能硬解 H.264 和 HEVC，片库大多能直连，少转码 |
+| 网络 | 电视能访问到你的 Emby | 有线或稳定 Wi-Fi，别跟服务器隔着很差的链路 |
+| 存储 | ABI 包大约 100 MB；全量包大约 250 MB | 同样够用，再留一点给封面缓存 |
 
-- 连接 Emby 服务器、恢复会话、切换最近账号
-- 首页、媒体库、搜索、影片 / 剧集 / 人物详情
-- 继续观看与收藏
-- 播放：直连优先，必要时走设备解码或 libVLC，再必要时由服务器转码
-- 设置里可改外观、播放、搜索和界面语言
+界面按 1080p 电视来的，4K 电视也能用。这不是手机 APK。
+
+## 这个版本能做什么
+
+- 登 Emby、下次自动进、切最近用过的服务器和账号
+- 欢迎页、首页、媒体库、搜索、全部搜索
+- 电影 / 剧集详情、人物页；单集卡片直接播，没有单独的单集页
+- 继续看、收藏
+- 播放：能直连就直连，不行再走本机解码或 libVLC，再不行让服务器转码；暂停、进度、字幕、音轨、倍速、下一集、媒体信息都有
+- 设置：外观、播放、搜索、界面语言、关于
 - 语言：跟随系统，或简体中文 / 繁体中文 / English / 日本語 / 한국어 / Español / Français / Deutsch
-
-不上 Google Play，没有 Play 内购，也没有 Android TV Top Shelf / 系统推荐。
