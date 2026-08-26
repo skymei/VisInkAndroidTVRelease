@@ -72,12 +72,15 @@ Package name: `com.skymei.visink`.
 
 The UI is designed around 1080p Android TV. 4K sets work. This is not a phone APK.
 
-## In this version
+## Current capabilities
 
-- Sign in to Emby, restore a session, switch recent servers and accounts
-- Welcome, Home, Library, Search, Search All
-- Movie / series details and person details; episode cards play immediately (no separate episode page)
+- Emby login and saved session
+- Multiple servers and accounts
+- Home, library, search
+- Movie / series details
+- Person pages
 - Continue watching and favorites
-- Playback: direct play first, then on-device decode or libVLC, then server transcode if needed — pause, progress, subtitles, audio, speed, next episode, media info
-- Settings: appearance, playback, search, language, About
-- Languages: System, Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, French, German
+- Direct play; transcode when the TV cannot decode
+- Subtitles, audio tracks, playback speed, next episode
+- Appearance, playback, and search settings
+- UI in Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and more
