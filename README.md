@@ -84,3 +84,11 @@ The UI is designed around 1080p Android TV. 4K sets work. This is not a phone AP
 - Subtitles, audio tracks, playback speed, next episode
 - Appearance, playback, and search settings
 - UI in Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and more
+
+## Feedback
+
+This project is still early. Please bear with us if something is rough.
+
+Open an [issue](https://github.com/skymei/VisInkAndroidTVRelease/issues) or email [support@visink.cc](mailto:support@visink.cc).
+
+For a bug report, include as much as you can: which build, which TV or box, what you did, what you expected, and what happened. Screenshots or a short recording help a lot.

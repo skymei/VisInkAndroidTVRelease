@@ -86,3 +86,11 @@
 - 字幕、音轨、倍速、下一集
 - 外观、播放、搜索设置
 - 简体中文、繁体中文、英语、日语、韩语等界面语言
+
+## 反馈
+
+项目还在起步，用着不顺还请担待。
+
+有问题可以到 [Issues](https://github.com/skymei/VisInkAndroidTVRelease/issues) 提，或者发邮件到 [support@visink.cc](mailto:support@visink.cc)。
+
+如果是报问题，尽量写细一点：用的哪一版、什么电视或盒子、怎么操作的、你觉得应该怎样、实际怎样。有截图或录屏更好，方便我们查。
