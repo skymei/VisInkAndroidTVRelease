@@ -1,6 +1,6 @@
 <h1 align="center">
-  <img src="docs/logo-ink.png#gh-light-mode-only" width="32" alt="VisInk" valign="middle" />
-  <img src="docs/logo.png#gh-dark-mode-only" width="32" alt="VisInk" valign="middle" />
+  <img src="docs/logo-ink.png#gh-light-mode-only" height="32" width="32" alt="VisInk" valign="middle" />
+  <img src="docs/logo.png#gh-dark-mode-only" height="32" width="32" alt="VisInk" valign="middle" />
   VisInk
 </h1>
 
