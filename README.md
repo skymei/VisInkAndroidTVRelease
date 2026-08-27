@@ -1,5 +1,6 @@
 <h1 align="center">
-  <img src="docs/logo.png" width="48" alt="VisInk" valign="middle" />
+  <img src="docs/logo-ink.png#gh-light-mode-only" width="48" alt="VisInk" valign="middle" />
+  <img src="docs/logo.png#gh-dark-mode-only" width="48" alt="VisInk" valign="middle" />
   VisInk
 </h1>
 
@@ -10,6 +11,12 @@
 <p align="center">
   Multimedia clients for your own library.<br/>
   This repo is the <strong>free Android TV drop</strong> — sideload APKs, not Play Store, no subscription.
+</p>
+
+<p align="center">
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=downloads" alt="Downloads" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=latest" alt="Latest release downloads" /></a>
 </p>
 
 <p align="center">

@@ -1,5 +1,6 @@
 <h1 align="center">
-  <img src="docs/logo.png" width="48" alt="VisInk" valign="middle" />
+  <img src="docs/logo-ink.png#gh-light-mode-only" width="48" alt="VisInk" valign="middle" />
+  <img src="docs/logo.png#gh-dark-mode-only" width="48" alt="VisInk" valign="middle" />
   VisInk
 </h1>
 
@@ -10,6 +11,12 @@
 <p align="center">
   面向 Android 电视的 Emby 客户端。<br/>
   本仓库只发安装包，免费下载。
+</p>
+
+<p align="center">
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0" alt="下载次数" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=%E6%9C%80%E6%96%B0%E7%89%88" alt="最新版下载" /></a>
 </p>
 
 <p align="center">
