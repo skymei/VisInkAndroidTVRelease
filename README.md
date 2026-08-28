@@ -14,9 +14,15 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/v/release/skymei/VisInkAndroidTVRelease?label=release" alt="Latest release" /></a>
+  &nbsp;
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=downloads" alt="Downloads" /></a>
   &nbsp;
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=latest" alt="Latest release downloads" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/stargazers"><img src="https://img.shields.io/github/stars/skymei/VisInkAndroidTVRelease?style=flat" alt="Stars" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/issues"><img src="https://img.shields.io/github/issues/skymei/VisInkAndroidTVRelease" alt="Issues" /></a>
 </p>
 
 <p align="center">
@@ -65,12 +71,12 @@ VisInk is a client, not a streaming service. You run Emby; this app is the TV re
 
 Package name: `com.skymei.visink`.
 
-## Android TV version and hardware
+## Android version and hardware
 
 | | Minimum | Recommended |
 |---|---|---|
-| System | Android TV / Google TV **7.0** (API 24) | Android TV / Google TV **12** or later |
-| Device | A TV or box with the Android TV launcher and a D-pad remote. Phones and tablets are not supported. | A living-room set or box you actually use with a remote, 1080p or 4K |
+| System | Android **7.0** (API 24) | Android **12** or later |
+| Device | A TV or box with a TV launcher and a D-pad remote (Android TV, Google TV, and similar). Phones and tablets are not supported. | A living-room set or box you actually use with a remote, 1080p or 4K |
 | CPU | 32-bit ARM (`armeabi-v7a`) or 64-bit ARM (`arm64-v8a`) | Same as the TV: 32-bit box → v7a package; 64-bit box → arm64 package |
 | Video | A hardware decoder for common files (at least H.264) | Hardware decode for H.264 and HEVC so most libraries direct-play |
 | Network | Reach your Emby server from the TV | Wired or stable Wi-Fi to the server |

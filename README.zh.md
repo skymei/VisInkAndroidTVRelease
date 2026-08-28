@@ -14,9 +14,15 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/v/release/skymei/VisInkAndroidTVRelease?label=%E6%9C%80%E6%96%B0%E7%89%88" alt="最新版本" /></a>
+  &nbsp;
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0" alt="下载次数" /></a>
   &nbsp;
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=%E6%9C%80%E6%96%B0%E7%89%88" alt="最新版下载" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=%E6%9C%AC%E7%89%88%E4%B8%8B%E8%BD%BD" alt="本版下载" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/stargazers"><img src="https://img.shields.io/github/stars/skymei/VisInkAndroidTVRelease?style=flat" alt="Star" /></a>
+  &nbsp;
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/issues"><img src="https://img.shields.io/github/issues/skymei/VisInkAndroidTVRelease?label=Issues" alt="Issues" /></a>
 </p>
 
 <p align="center">
@@ -71,8 +77,8 @@
 
 | | 最低配置 | 推荐配置 |
 |---|---|---|
-| 系统 | Android 电视 / Google TV 7.0 | Android 电视 / Google TV 12 或更新 |
-| 设备 | 带系统桌面、能用方向键遥控器的电视或盒子 | 客厅常用的 1080p 或 4K 电视 / 盒子 |
+| 系统 | Android **7.0**（API 24） | Android **12** 或更新 |
+| 设备 | 带电视桌面、能用方向键遥控器的电视或盒子（Android TV、Google TV 等）。不支持手机和平板 | 客厅常用的 1080p 或 4K 电视 / 盒子 |
 | 芯片 | ARM 32 位或 64 位 | 和电视一致：32 位下 v7a，64 位下 arm64 |
 | 解码 | 能硬解 H.264 | 能硬解 H.264、HEVC |
 | 网络 | 电视能访问 Emby | 同一局域网，或远程网络稳定 |
