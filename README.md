@@ -5,102 +5,104 @@
 </h1>
 
 <p align="center">
-  <strong>English</strong> · <a href="README.zh.md">中文</a>
+  <strong>中文</strong> · <a href="README.en.md">English</a>
 </p>
 
 <p align="center">
-  Multimedia clients for your own library.<br/>
-  This repo is the <strong>free Android TV drop</strong> — sideload APKs, not Play Store, no subscription.
+  面向 Android 电视的 Emby 客户端。<br/>
+  本仓库只发安装包，免费下载。
 </p>
 
 <p align="center">
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/v/release/skymei/VisInkAndroidTVRelease?label=release" alt="Latest release" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/v/release/skymei/VisInkAndroidTVRelease?label=%E6%9C%80%E6%96%B0%E7%89%88" alt="最新版本" /></a>
   &nbsp;
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=downloads" alt="Downloads" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0" alt="下载次数" /></a>
   &nbsp;
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=latest%20downloads" alt="Latest release downloads" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/downloads/skymei/VisInkAndroidTVRelease/latest/total?label=%E6%9C%AC%E7%89%88%E4%B8%8B%E8%BD%BD" alt="本版下载" /></a>
   &nbsp;
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/stargazers"><img src="https://img.shields.io/github/stars/skymei/VisInkAndroidTVRelease?style=flat" alt="Stars" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/stargazers"><img src="https://img.shields.io/github/stars/skymei/VisInkAndroidTVRelease?style=flat" alt="Star" /></a>
   &nbsp;
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/issues"><img src="https://img.shields.io/github/issues/skymei/VisInkAndroidTVRelease" alt="Issues" /></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/issues"><img src="https://img.shields.io/github/issues/skymei/VisInkAndroidTVRelease?label=Issues" alt="Issues" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><strong>Download</strong></a>
+  <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><strong>下载安装包</strong></a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="docs/screens/home.jpg" alt="Home" width="920" />
+  <img src="docs/screens/home.jpg" alt="首页" width="920" />
 </p>
-<p align="center"><sub>Home</sub></p>
+<p align="center"><sub>首页</sub></p>
 
 <p align="center">
-  <img src="docs/screens/welcome.jpg" alt="Welcome" width="48%" />
+  <img src="docs/screens/welcome.jpg" alt="欢迎页" width="48%" />
   &nbsp;
-  <img src="docs/screens/login.jpg" alt="Sign in" width="48%" />
+  <img src="docs/screens/login.jpg" alt="登录" width="48%" />
 </p>
-<p align="center"><sub>Welcome · Sign in</sub></p>
+<p align="center"><sub>欢迎页 · 登录</sub></p>
 
 <p align="center">
-  <img src="docs/screens/search.jpg" alt="Search" width="48%" />
+  <img src="docs/screens/search.jpg" alt="搜索" width="48%" />
   &nbsp;
-  <img src="docs/screens/detail.jpg" alt="Title details" width="48%" />
+  <img src="docs/screens/detail.jpg" alt="详情" width="48%" />
 </p>
-<p align="center"><sub>Search · Details</sub></p>
+<p align="center"><sub>搜索 · 详情</sub></p>
 
 <p align="center">
-  <img src="docs/screens/mine.jpg" alt="Mine" width="48%" />
+  <img src="docs/screens/mine.jpg" alt="我的" width="48%" />
   &nbsp;
-  <img src="docs/screens/settings.jpg" alt="Settings" width="48%" />
+  <img src="docs/screens/settings.jpg" alt="设置" width="48%" />
 </p>
-<p align="center"><sub>Mine · Settings</sub></p>
+<p align="center"><sub>我的 · 设置</sub></p>
 
 ---
 
-VisInk is a client, not a streaming service. You run Emby; this app is the TV remote UI. APKs live on [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) (the tags), not on the default branch. Overlay-install to update. **Do not uninstall first** — that wipes saved servers and login.
+片库在你自己的 Emby 上。电视装好客户端，用遥控器看。
 
-## Which APK
+安装包在 [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) 里，也就是各个 tag 下面。默认分支没有 APK。更新时直接覆盖安装，不要先卸载，否则要重新登录。
 
-| File | Use |
+## 安装
+
+| 文件 | 说明 |
 |---|---|
-| `VisInk-*-armeabi-v7a.apk` | 32-bit ARM. **Most TVs should use this.** |
-| `VisInk-*-arm64-v8a.apk` | 64-bit ARM |
-| `VisInk-*-universal.apk` | All ABIs, largest file. Use only if you are unsure. |
+| `VisInk-*-armeabi-v7a.apk` | 32 位 ARM，**电视一般下这个** |
+| `VisInk-*-arm64-v8a.apk` | 64 位 ARM |
+| `VisInk-*-universal.apk` | 通用包，体积最大。不确定芯片再下这个 |
 
-Package name: `com.skymei.visink`.
+包名：`com.skymei.visink`。不能装在手机上。
 
-## Android version and hardware
+## 运行环境
 
-| | Minimum | Recommended |
+| | 最低配置 | 推荐配置 |
 |---|---|---|
-| System | Android **7.0** (API 24) | Android **12** or later |
-| Device | A TV or box with a TV launcher and a D-pad remote (Android TV, Google TV, and similar). Phones and tablets are not supported. | A living-room set or box you actually use with a remote, 1080p or 4K |
-| CPU | 32-bit ARM (`armeabi-v7a`) or 64-bit ARM (`arm64-v8a`) | Same as the TV: 32-bit box → v7a package; 64-bit box → arm64 package |
-| Video | A hardware decoder for common files (at least H.264) | Hardware decode for H.264 and HEVC so most libraries direct-play |
-| Network | Reach your Emby server from the TV | Wired or stable Wi-Fi to the server |
-| Storage | ~100 MB for an ABI build; ~250 MB for universal | Same; leave headroom for artwork cache |
+| 系统 | Android **7.0**（API 24） | Android **12** 或更新 |
+| 设备 | 带电视桌面、能用方向键遥控器的电视或盒子（Android TV、Google TV 等）。不支持手机和平板 | 客厅常用的 1080p 或 4K 电视 / 盒子 |
+| 芯片 | ARM 32 位或 64 位 | 和电视一致：32 位下 v7a，64 位下 arm64 |
+| 解码 | 能硬解 H.264 | 能硬解 H.264、HEVC |
+| 网络 | 电视能访问 Emby | 同一局域网，或远程网络稳定 |
+| 空间 | 约 100 MB（单架构包） | 再留一点给封面缓存即可 |
 
-The UI is designed around 1080p Android TV. 4K sets work. This is not a phone APK.
+界面按 1080p 电视做的，4K 也能用。
 
-## Current capabilities
+## 当前版本能力
 
-- Emby login and saved session
-- Multiple servers and accounts
-- Home, library, search
-- Movie / series details
-- Person pages
-- Continue watching and favorites
-- Direct play; transcode when the TV cannot decode
-- Subtitles, audio tracks, playback speed, next episode
-- Appearance, playback, and search settings
-- UI in Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and more
+- 登录 Emby，保存会话
+- 多服务器、多账号
+- 首页、媒体库、搜索
+- 影片 / 剧集详情
+- 人物页
+- 继续观看、收藏
+- 直连播放；本机解不了再转码
+- 字幕、音轨、倍速、下一集
+- 外观、播放、搜索设置
+- 简体中文、繁体中文、英语、日语、韩语等界面语言
 
-## Feedback
+## 反馈
 
-This project is still early. Please bear with us if something is rough.
+项目还在起步，用着不顺还请担待。
 
-Open an [issue](https://github.com/skymei/VisInkAndroidTVRelease/issues) or email [support@visink.cc](mailto:support@visink.cc).
+有问题可以到 [Issues](https://github.com/skymei/VisInkAndroidTVRelease/issues) 提，或者发邮件到 [support@visink.cc](mailto:support@visink.cc)。
 
-For a bug report, include as much as you can: which build, which TV or box, what you did, what you expected, and what happened. Screenshots or a short recording help a lot.
+如果是报问题，尽量写细一点：用的哪一版、什么电视或盒子、怎么操作的、你觉得应该怎样、实际怎样。有截图或录屏更好，方便我们查。
