@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  面向 Android 电视的 Emby 客户端。<br/>
-  本仓库只发安装包，免费下载。
+  面向 Android TV 的 Emby 客户端，免费使用。
 </p>
 
 <p align="center">
@@ -59,9 +58,9 @@
 
 ---
 
-片库在你自己的 Emby 上。电视装好客户端，用遥控器看。
+媒体资源在你的 Emby 服务器端。本项目只提供 Emby 客户端登录、播放能力。
 
-安装包在 [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) 里，也就是各个 tag 下面。默认分支没有 APK。更新时直接覆盖安装，不要先卸载，否则要重新登录。
+安装包在 [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) 里，也就是各个 tag 下面，请务必安装最新的 Release 版本，Pre-Release 版本是测试版，可能会有各种问题，更新时直接覆盖安装，不要先卸载，否则要重新登录你应用内已经登录过的服务器。
 
 ## 安装
 
@@ -70,8 +69,6 @@
 | `VisInk-*-armeabi-v7a.apk` | 32 位 ARM，**电视一般下这个** |
 | `VisInk-*-arm64-v8a.apk` | 64 位 ARM |
 | `VisInk-*-universal.apk` | 通用包，体积最大。不确定芯片再下这个 |
-
-包名：`com.skymei.visink`。不能装在手机上。
 
 ## 运行环境
 
@@ -103,6 +100,6 @@
 
 项目还在起步，用着不顺还请担待。
 
-有问题可以到 [Issues](https://github.com/skymei/VisInkAndroidTVRelease/issues) 提，或者发邮件到 [support@visink.cc](mailto:support@visink.cc)。
+安卓 TV 系统繁杂，开发者没有足够的真机 TV 去做完整的测试，在部分真机和模拟器的联合测试下仍然可能有很多的不兼容问题，请下载正式 release 版本使用，如果有问题可以提 [Issue](https://github.com/skymei/VisInkAndroidTVRelease/issues)，或者发邮件到 [support@visink.cc](mailto:support@visink.cc)。
 
-如果是报问题，尽量写细一点：用的哪一版、什么电视或盒子、怎么操作的、你觉得应该怎样、实际怎样。有截图或录屏更好，方便我们查。
+报问题，请尽量写细一点：用的哪一版、什么电视或盒子、媒体资源格式是什么，怎么操作的、预期怎样、实际怎样。有截图或录屏更好，方便我们排查修复。

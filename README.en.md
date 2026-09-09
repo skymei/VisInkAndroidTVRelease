@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  Multimedia clients for your own library.<br/>
-  This repo is the <strong>free Android TV drop</strong> — sideload APKs, not Play Store, no subscription.
+  A free Emby client for Android TV.
 </p>
 
 <p align="center">
@@ -59,7 +58,9 @@
 
 ---
 
-VisInk is a client, not a streaming service. You run Emby; this app is the TV remote UI. APKs live on [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases) (the tags), not on the default branch. Overlay-install to update. **Do not uninstall first** — that wipes saved servers and login.
+Your media lives on your own Emby server. This project only provides the Emby client for browsing and playback.
+
+APKs are on [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases), under each tag. Always install the latest stable Release — Pre-Release builds are test versions and may have issues. To update, overlay-install on top of the existing app. **Do not uninstall first** — that wipes the servers and accounts you have already signed in to.
 
 ## Which APK
 
@@ -68,8 +69,6 @@ VisInk is a client, not a streaming service. You run Emby; this app is the TV re
 | `VisInk-*-armeabi-v7a.apk` | 32-bit ARM. **Most TVs should use this.** |
 | `VisInk-*-arm64-v8a.apk` | 64-bit ARM |
 | `VisInk-*-universal.apk` | All ABIs, largest file. Use only if you are unsure. |
-
-Package name: `com.skymei.visink`.
 
 ## Android version and hardware
 
@@ -101,6 +100,6 @@ The UI is designed around 1080p Android TV. 4K sets work. This is not a phone AP
 
 This project is still early. Please bear with us if something is rough.
 
-Open an [issue](https://github.com/skymei/VisInkAndroidTVRelease/issues) or email [support@visink.cc](mailto:support@visink.cc).
+Android TV runs on a wide variety of system builds, and we don't have enough physical TVs to test every one. Despite testing on a mix of real devices and emulators, compatibility issues may still arise. Please download an official release build. If you run into a problem, open an [issue](https://github.com/skymei/VisInkAndroidTVRelease/issues) or email [support@visink.cc](mailto:support@visink.cc).
 
-For a bug report, include as much as you can: which build, which TV or box, what you did, what you expected, and what happened. Screenshots or a short recording help a lot.
+When reporting a bug, please be as specific as you can: which build, which TV or box, what media format you were playing, what you did, what you expected, and what actually happened. Screenshots or a short screen recording make it much easier for us to investigate and fix.
