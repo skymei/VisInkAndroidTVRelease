@@ -102,4 +102,4 @@ This project is still early. Please bear with us if something is rough.
 
 Android TV runs on a wide variety of system builds, and we don't have enough physical TVs to test every one. Despite testing on a mix of real devices and emulators, compatibility issues may still arise. Please download an official release build. If you run into a problem, open an [issue](https://github.com/skymei/VisInkAndroidTVRelease/issues) or email [support@visink.cc](mailto:support@visink.cc).
 
-When reporting a bug, please be as specific as you can: which build, which TV or box, what media format you were playing, what you did, what you expected, and what actually happened. Screenshots or a short screen recording make it much easier for us to investigate and fix.
+When reporting an issue, please provide as much detail as possible: the Android system version (this is very important—please be specific), the Visink version used, the TV or streaming box model, the media resource format, the steps taken, the expected outcome, and the actual result. Screenshots or screen recordings are also helpful, as they assist us in troubleshooting and fixing the problem.
