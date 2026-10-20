@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  面向 Android TV 的 Emby 客户端，免费使用。<br />
-  用遥控器浏览你自己的媒体库，并在电视上完成播放。
+  面向 Android TV 的 Emby 客户端，免费使用。
 </p>
+
 
 <p align="center">
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases/latest"><img src="https://img.shields.io/github/v/release/skymei/VisInkAndroidTVRelease?label=%E6%9C%80%E6%96%B0%E7%89%88" alt="最新版本" /></a>

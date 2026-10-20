@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  A free Emby client for Android TV.<br />
-  Browse your own library with a remote, and play it on the television.
+  A free Emby client for Android TV.
 </p>
 
 <p align="center">
