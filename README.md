@@ -28,7 +28,6 @@
 <p align="center">
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><strong>下载安装包</strong></a>
 </p>
----
 
 <p align="center">
   <img src="docs/screens/immersive.jpg" alt="沉浸轮播" width="960" />
