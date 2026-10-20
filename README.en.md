@@ -84,6 +84,27 @@ Your media stays on your Emby server. This project is the TV client for signing 
 - Intros, credits, and the next episode.
 - The active server line can be changed during playback.
 
+#### Supported media formats
+
+The app first tries to let the TV or box play the original media directly. Most common files play this way when the device supports their formats; otherwise, Emby may convert the media into a compatible format first. A TV that supports Dolby Vision is required for Dolby Vision playback, but the file's profile, container, and audio tracks can still affect the final result.
+
+| Type | Playable range | Notes |
+|---|---|---|
+| Video | H.264 / AVC | MP4, M4V, MOV, MKV, and TS; also the format most often used when the server converts video |
+| Video | HEVC / H.265 | MP4, MKV, and TS; common 4K, Main10, and HDR files usually work, depending on the TV or box |
+| Video | AV1 | MP4, MKV, and WebM; requires AV1 decoding on the TV or box |
+| Video | VP8 / VP9 | MKV and WebM; requires the corresponding decoder on the TV or box |
+| Picture | SDR, HDR10, HDR10+, HLG | Requires the TV or box to support the corresponding HDR display mode |
+| Dolby Vision | Common Profile 5 and Profile 8 / 8.1 | When the TV or box supports the profile, the app can pass the Dolby Vision picture to it and may trigger the TV's Dolby Vision mode; verify actual files on devices such as the Sony X90L |
+| Dolby Vision | Profile 7 | Some files play as HDR10; keeping full Dolby Vision depends on the file and device |
+| Dolby Vision | Profile 8.4 and Profile 4 | Some TVs and files work; compatibility depends on the actual device |
+| Audio | AAC, AC-3, E-AC-3, MP3, FLAC, Opus, Vorbis, DTS, DTS-HD, TrueHD, ALAC, WMA, PCM | Common tracks can play; Atmos and DTS:X output depends on the TV, receiver or soundbar, and the HDMI/eARC connection |
+| Files and streaming | MP4, M4V, MOV, MKV, WebM, TS, HLS | The extension is only the outer container; the video, audio, and subtitle tracks inside it still affect direct playback |
+
+The following sources are more likely to need server conversion: VC-1, WMV3, ProRes, HEVC in 12-bit or 4:2:2 / 4:4:4, and ISO, BDMV, RM, or RMVB. A file can also be converted when its resolution, bitrate, frame rate, audio, or subtitles exceed the device's capabilities.
+
+After server conversion, Dolby Vision or HDR10+ dynamic effects may not be preserved. Open “Media Info” during playback to see whether the current route is Direct Play, Direct Stream, or server conversion.
+
 ### Subtitles and danmaku
 
 - Text subtitles: SRT, VTT, and ASS / SSA, with size, position, and color.
@@ -117,7 +138,7 @@ APKs are on [Releases](https://github.com/skymei/VisInkAndroidTVRelease/releases
 | System | Android **7.0** (API 24) | Android **12** or later |
 | Device | A TV or box with a TV launcher and a D-pad remote. Phones and tablets are not supported. | A 1080p or 4K set you actually use with a remote |
 | CPU | 32-bit or 64-bit ARM | Match the device: 32-bit uses v7a, 64-bit uses arm64 |
-| Decoding | Hardware H.264 | Hardware H.264 and HEVC. Multichannel audio can fall back to software decode. |
+| Video playback | H.264 support | H.264 and HEVC support; other formats depend on the TV or box. |
 | Network | The TV can reach Emby | Same LAN, or a stable remote link |
 | Storage | About 100 MB for an ABI build | Leave room for artwork and the playback cache |
 
