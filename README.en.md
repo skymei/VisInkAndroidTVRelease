@@ -28,9 +28,6 @@
 <p align="center">
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><strong>Download</strong></a>
 </p>
-
-Your media stays on your Emby server. This project is the TV client for signing in, browsing, and playback.
-
 ---
 
 <p align="center">
@@ -67,6 +64,8 @@ Your media stays on your Emby server. This project is the TV client for signing 
 ---
 
 ## Capabilities
+
+Your media stays on your Emby server. This project is the TV client for signing in, browsing, and playback.
 
 ### Library
 

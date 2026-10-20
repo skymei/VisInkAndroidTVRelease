@@ -28,9 +28,6 @@
 <p align="center">
   <a href="https://github.com/skymei/VisInkAndroidTVRelease/releases"><strong>下载安装包</strong></a>
 </p>
-
-媒体资源在你的 Emby 服务器上。本项目只提供电视端的登录、浏览和播放。
-
 ---
 
 <p align="center">
@@ -67,6 +64,8 @@
 ---
 
 ## 能力
+
+媒体资源在你的 Emby 服务器上。本项目只提供电视端的登录、浏览和播放。
 
 ### 浏览
 
