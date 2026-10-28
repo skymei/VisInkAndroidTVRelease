@@ -34,97 +34,96 @@
 </p>
 
 <p align="center">
-  <img src="docs/screens/immersive.jpg" alt="沉浸轮播" width="960" />
+  <img src="docs/screens/immersive.jpg" alt="沉浸轮播" width="44%" />
 </p>
 <p align="center"><sub>空闲后进入沉浸轮播</sub></p>
 
 <p align="center">
-  <img src="docs/screens/home.jpg" alt="首页" width="48%" />
+  <img src="docs/screens/home.jpg" alt="首页" width="30%" />
   &nbsp;
-  <img src="docs/screens/detail.jpg" alt="剧集详情" width="48%" />
+  <img src="docs/screens/detail.jpg" alt="剧集详情" width="30%" />
+  &nbsp;
+  <img src="docs/screens/library.jpg" alt="媒体库" width="30%" />
 </p>
-<p align="center"><sub>首页 · 剧集详情</sub></p>
+<p align="center"><sub>首页 · 剧集详情 · 媒体库</sub></p>
 
 <p align="center">
-  <img src="docs/screens/player.jpg" alt="播放与弹幕" width="48%" />
+  <img src="docs/screens/player.jpg" alt="播放与弹幕" width="30%" />
   &nbsp;
-  <img src="docs/screens/player-paused.jpg" alt="暂停" width="48%" />
-</p>
-<p align="center"><sub>播放与弹幕 · 暂停</sub></p>
-
-<p align="center">
-  <img src="docs/screens/library.jpg" alt="媒体库" width="48%" />
+  <img src="docs/screens/player-paused.jpg" alt="暂停" width="30%" />
   &nbsp;
-  <img src="docs/screens/search.jpg" alt="搜索" width="48%" />
+  <img src="docs/screens/search.jpg" alt="搜索" width="30%" />
 </p>
-<p align="center"><sub>媒体库 · 跨服务器搜索</sub></p>
-
-<p align="center">
-  <img src="docs/screens/settings.jpg" alt="播放设置" width="960" />
-</p>
-<p align="center"><sub>播放设置：码率、字幕、弹幕与解码</sub></p>
+<p align="center"><sub>播放与弹幕 · 暂停 · 跨服务器搜索</sub></p>
 
 ---
 
 ## 能力
 
-媒体资源在你的 Emby 服务器上。本项目只提供电视端的登录、浏览和播放。
+媒体资源在你的 Emby 服务器上。本应用只负责电视端的登录、浏览和播放。
 
 ### 浏览
 
-- 登录 Emby 并保持会话，支持多台服务器、多个账号
-- 可为服务器线路单独配置代理
-- 首页、空闲沉浸轮播、继续观看、收藏和收藏人物
-- 媒体库浏览，可按观看状态筛选和排序
-- 搜索当前服务器，或一次搜索已保存的全部服务器；支持手机扫码输入
+- 多服务器、多账号，会话持久保存
+- 登录页管理线路：名称、协议、账号密码和延迟显示
+- 服务器头像：内置图标按名称搜索，也可导入图标库
+- 首页与「我的」：继续观看、收藏、收藏人物和观看统计
+- 空闲自动进入沉浸轮播，超时与轮播时保持亮屏可设
+- 媒体库单页滚动，按观看状态筛选和排序
+- 搜索当前服务器或全部服务器，聚合搜索可在设置关闭
 - 电影 / 剧集详情、分季选集、人物页
 
 ### 播放
 
-- 优先直连播放；电视解不了时，再由服务器转码
-- 可设置播放码率上限
-- 视频硬件解码；音频可在自动、软件解码、系统解码之间切换，覆盖 AAC、AC3、EAC3、DTS、TrueHD 等常见格式
-- 音轨、倍速、多级快进和快退
-- 记住同一部电影或剧集的倍速、音轨、字幕和版本
-- 片头、片尾和下一集
-- 播放中可以切换线路
-
-#### 媒体格式支持
-
-应用会优先让电视或盒子直接播放原始片源。只要电视或盒子支持对应格式，大多数常见资源都可以直接播放；设备不支持时，Emby 服务器可能会先转换成兼容格式。电视支持杜比视界，是播放杜比视界片源的前提，但不同片源的 Profile、封装方式和音轨仍可能影响最终效果。
-
-| 类型 | 可播放范围 | 说明 |
-|---|---|---|
-| 视频 | H.264 / AVC | MP4、M4V、MOV、MKV、TS；兼容性最好，也是服务器转换时最常用的格式 |
-| 视频 | HEVC / H.265 | MP4、MKV、TS；常见的 4K、Main10 和 HDR 片源通常可以播放，具体取决于电视或盒子的能力 |
-| 视频 | AV1 | MP4、MKV、WebM；需要电视或盒子支持 AV1 解码 |
-| 视频 | VP8 / VP9 | MKV、WebM；需要电视或盒子支持对应解码 |
-| 画面 | SDR、HDR10、HDR10+、HLG | 需要电视或盒子支持对应的 HDR 显示效果 |
-| 杜比视界 | 常见 Profile 5、Profile 8 / 8.1 | 电视或盒子支持对应 Profile 时，可以把杜比视界画面交给设备输出，并可能触发电视的杜比视界效果；Sony X90L 等设备请以实际片源验证 |
-| 杜比视界 | Profile 7 | 部分片源会以 HDR10 播放，是否能保持完整杜比视界效果取决于片源和设备 |
-| 杜比视界 | Profile 8.4、Profile 4 | 部分电视和片源可以播放，兼容性需要以实际设备为准 |
-| 音频 | AAC、AC-3、E-AC-3、MP3、FLAC、Opus、Vorbis、DTS、DTS-HD、TrueHD、ALAC、WMA、PCM | 常见音轨可以播放；Atmos、DTS:X 是否能由电视、功放或回音壁输出，取决于设备和 HDMI/eARC 连接方式 |
-| 文件和在线播放 | MP4、M4V、MOV、MKV、WebM、TS、HLS | 文件后缀只代表外包装，里面的视频、音频和字幕格式仍会影响能否直接播放 |
-
-以下资源更容易需要服务器转换：VC-1、WMV3、ProRes，12-bit 或 4:2:2 / 4:4:4 的 HEVC，以及 ISO、BDMV、RM、RMVB 等格式。片源的分辨率、码率、帧率、音轨或字幕超出设备能力时，也可能触发转换。
-
-服务器转换后，画面可能不再保留杜比视界或 HDR10+ 的动态效果。播放时打开“媒体信息”，可以看到当前是直接播放、直接串流还是服务器转换。
+- 优先直连，设备不支持时由服务器转码；可设码率上限
+- 视频硬解；音频可选自动、软件或系统解码，覆盖 AAC、AC3、EAC3、DTS、TrueHD
+- 多声道按输出设备降混；音轨、字幕、线路和解码都能在播放中切换
+- 面板里有章节和选集，倍速与快进步长（5–60 秒）可调
+- 记住每部影片的倍速、音轨、字幕和版本，可在设置关闭
+- 片头片尾可分别设为自动跳过，片尾能返回并定位刚播完的一集
+- 控件隐藏时按确认键暂停，返回需两秒内连按两次才退出
+- 播放背景取图：默认开启，详情页和首页 Hero 用屏上已显示的封面作开场图
 
 ### 字幕与弹幕
 
-- 文本字幕：SRT、VTT、ASS / SSA。可调整大小、位置和颜色
-- 图形字幕：PGS、DVB、VobSub
-- 播放中可对当前字幕微调提前或延后
-- 可接入 ASSRT 在线字幕
-- 弹幕跟随影片时间，支持自动匹配、手动搜索、样式和偏移
-- 可添加兼容的弹幕服务，并用手机扫码填写地址
+- 文本字幕 SRT、VTT、ASS / SSA，大小、位置、颜色可调，双语分别配色
+- 图形字幕 PGS、DVB、VobSub
+- 播放中可临时提前或延后字幕，也可在线搜索 ASSRT 字幕并自填密钥
+- 弹幕跟随影片时间，支持弹弹play 官方来源和自定义来源
+- 弹幕可自动匹配或手动搜索，样式、密度、时间偏移可调，匹配跨集记住
+
+### 网络与代理
+
+- 全局代理统一转发 Emby、弹幕和应用请求，也可按线路或弹幕单独覆盖
+- 每条线路可设 HTTP / SOCKS 代理和自定义名称
+- 代理、弹幕服务、图标库地址都能用手机扫码填写
 
 ### 应用
 
-- 外观皮肤，以及小、中、大三档文字
-- 界面语言：跟随系统、简体中文、繁体中文、英语、日语、韩语、西班牙语、法语、德语
+- 界面文字小 / 中 / 大三档；语言可跟随系统，另支持简繁中文、英、日、韩、西、法、德
+- 节能模式：降低图片尺寸与并发加载，缓解低配设备卡顿
 - 按类别清理音视频、图片、字幕、弹幕和更新包缓存，不影响登录和设置
-- 从 GitHub 检查正式版，覆盖安装并保留已登录的服务器
+- 启动时检查更新（可关），覆盖安装保留已登录的服务器
+- 关于页可查看开源许可
+
+## 媒体格式
+
+默认让电视或盒子直接播放原片，设备不支持时再由 Emby 转成兼容格式。电视支持杜比视界，是播放杜比视界片源的前提。
+
+| 类型 | 支持 | 说明 |
+|---|---|---|
+| 视频 | H.264 / AVC | MP4、M4V、MOV、MKV、TS，兼容性最好 |
+| 视频 | HEVC / H.265 | MP4、MKV、TS，常见 4K、Main10 和 HDR 片源通常可播 |
+| 视频 | AV1、VP8 / VP9 | MP4、MKV、WebM，需设备支持对应解码 |
+| 画面 | SDR、HDR10、HDR10+、HLG | 需设备支持对应的 HDR 显示 |
+| 杜比视界 | Profile 5、8 / 8.1 | 画面交给设备输出，可能触发电视的杜比视界效果 |
+| 杜比视界 | Profile 7、8.4、4 | 视片源和设备而定，Profile 7 部分会以 HDR10 播放 |
+| 音频 | AAC、AC-3、E-AC-3、MP3、FLAC、Opus、Vorbis、DTS、DTS-HD、TrueHD、ALAC、WMA、PCM | Atmos、DTS:X 能否输出取决于设备与 HDMI / eARC |
+| 封装 | MP4、M4V、MOV、MKV、WebM、TS、HLS | 后缀只是外包装，内部格式仍影响能否直连 |
+
+VC-1、WMV3、ProRes、12-bit 或 4:2:2 / 4:4:4 的 HEVC，以及 ISO、BDMV、RM、RMVB 更容易触发转码；分辨率、码率、帧率、音轨或字幕超出设备能力时也会转码。
+
+转码后画面可能不再保留杜比视界或 HDR10+ 的动态效果。播放时打开「媒体信息」，可查看当前是直接播放、直接串流还是服务器转码。
 
 ## 安装
 

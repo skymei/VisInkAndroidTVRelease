@@ -33,97 +33,96 @@
 </p>
 
 <p align="center">
-  <img src="docs/screens/immersive.jpg" alt="Immersive carousel" width="960" />
+  <img src="docs/screens/immersive.jpg" alt="Immersive carousel" width="44%" />
 </p>
 <p align="center"><sub>Immersive carousel after idle</sub></p>
 
 <p align="center">
-  <img src="docs/screens/home.jpg" alt="Home" width="48%" />
+  <img src="docs/screens/home.jpg" alt="Home" width="30%" />
   &nbsp;
-  <img src="docs/screens/detail.jpg" alt="Series details" width="48%" />
+  <img src="docs/screens/detail.jpg" alt="Series details" width="30%" />
+  &nbsp;
+  <img src="docs/screens/library.jpg" alt="Library" width="30%" />
 </p>
-<p align="center"><sub>Home · Series details</sub></p>
+<p align="center"><sub>Home · Series details · Library</sub></p>
 
 <p align="center">
-  <img src="docs/screens/player.jpg" alt="Playback with danmaku" width="48%" />
+  <img src="docs/screens/player.jpg" alt="Playback with danmaku" width="30%" />
   &nbsp;
-  <img src="docs/screens/player-paused.jpg" alt="Paused" width="48%" />
-</p>
-<p align="center"><sub>Playback with danmaku · Paused</sub></p>
-
-<p align="center">
-  <img src="docs/screens/library.jpg" alt="Library" width="48%" />
+  <img src="docs/screens/player-paused.jpg" alt="Paused" width="30%" />
   &nbsp;
-  <img src="docs/screens/search.jpg" alt="Search" width="48%" />
+  <img src="docs/screens/search.jpg" alt="Search" width="30%" />
 </p>
-<p align="center"><sub>Library · Search across servers</sub></p>
-
-<p align="center">
-  <img src="docs/screens/settings.jpg" alt="Playback settings" width="960" />
-</p>
-<p align="center"><sub>Playback settings: bitrate, subtitles, danmaku, and decoding</sub></p>
+<p align="center"><sub>Playback with danmaku · Paused · Cross-server search</sub></p>
 
 ---
 
 ## Capabilities
 
-Your media stays on your Emby server. This project is the TV client for signing in, browsing, and playback.
+Your media stays on your Emby server. The app only handles sign-in, browsing, and playback on the TV.
 
-### Library
+### Browsing
 
-- Sign in to Emby and keep the session. Multiple servers and accounts.
-- A proxy can be set on each server line.
-- Home, an idle immersive carousel, continue watching, favorites, and favorite people.
-- Library browsing with watched-state filters and sort.
-- Search the current server, or every saved server at once. A phone can submit the query by scanning a code.
-- Movie and series details, seasons and episodes, and person pages.
+- Multiple servers and accounts with persistent sessions
+- Manage lines on the sign-in page: name, protocol, credentials, and latency
+- Server avatars from a built-in searchable set, or an imported icon library
+- Home and "Mine": continue watching, favorites, favorite people, and watch statistics
+- An immersive carousel starts when idle, with configurable timeout and keep-awake
+- Library on a single scrolling page, filtered and sorted by watch state
+- Search the current server or all saved servers; aggregated search can be turned off
+- Movie and series details, seasons and episodes, and person pages
 
 ### Playback
 
-- Direct play first. The server transcodes only when the TV cannot decode the file.
-- A manual bitrate ceiling.
-- Hardware video decode. Audio can use automatic, software, or system decode, including AAC, AC3, EAC3, DTS, and TrueHD.
-- Audio tracks, playback speed, and several seek step sizes.
-- The app can remember speed, audio, subtitles, and version for the same movie or series.
-- Intros, credits, and the next episode.
-- The active server line can be changed during playback.
-
-#### Supported media formats
-
-The app first tries to let the TV or box play the original media directly. Most common files play this way when the device supports their formats; otherwise, Emby may convert the media into a compatible format first. A TV that supports Dolby Vision is required for Dolby Vision playback, but the file's profile, container, and audio tracks can still affect the final result.
-
-| Type | Playable range | Notes |
-|---|---|---|
-| Video | H.264 / AVC | MP4, M4V, MOV, MKV, and TS; also the format most often used when the server converts video |
-| Video | HEVC / H.265 | MP4, MKV, and TS; common 4K, Main10, and HDR files usually work, depending on the TV or box |
-| Video | AV1 | MP4, MKV, and WebM; requires AV1 decoding on the TV or box |
-| Video | VP8 / VP9 | MKV and WebM; requires the corresponding decoder on the TV or box |
-| Picture | SDR, HDR10, HDR10+, HLG | Requires the TV or box to support the corresponding HDR display mode |
-| Dolby Vision | Common Profile 5 and Profile 8 / 8.1 | When the TV or box supports the profile, the app can pass the Dolby Vision picture to it and may trigger the TV's Dolby Vision mode; verify actual files on devices such as the Sony X90L |
-| Dolby Vision | Profile 7 | Some files play as HDR10; keeping full Dolby Vision depends on the file and device |
-| Dolby Vision | Profile 8.4 and Profile 4 | Some TVs and files work; compatibility depends on the actual device |
-| Audio | AAC, AC-3, E-AC-3, MP3, FLAC, Opus, Vorbis, DTS, DTS-HD, TrueHD, ALAC, WMA, PCM | Common tracks can play; Atmos and DTS:X output depends on the TV, receiver or soundbar, and the HDMI/eARC connection |
-| Files and streaming | MP4, M4V, MOV, MKV, WebM, TS, HLS | The extension is only the outer container; the video, audio, and subtitle tracks inside it still affect direct playback |
-
-The following sources are more likely to need server conversion: VC-1, WMV3, ProRes, HEVC in 12-bit or 4:2:2 / 4:4:4, and ISO, BDMV, RM, or RMVB. A file can also be converted when its resolution, bitrate, frame rate, audio, or subtitles exceed the device's capabilities.
-
-After server conversion, Dolby Vision or HDR10+ dynamic effects may not be preserved. Open “Media Info” during playback to see whether the current route is Direct Play, Direct Stream, or server conversion.
+- Direct play first; the server transcodes only when the device cannot handle the file. A bitrate ceiling is available.
+- Hardware video decode; audio can use automatic, software, or system decode, covering AAC, AC3, EAC3, DTS, and TrueHD
+- Multichannel audio is downmixed for the output device; audio tracks, subtitles, lines, and decode mode can be switched during playback
+- Chapters and episodes in the player panel; playback speed and seek step (5-60s) are adjustable
+- Remembers speed, audio, subtitles, and version per title, and can be turned off in Settings
+- Intro and credits can each be skipped automatically; credits can return to the episode that just ended
+- Press OK to pause while the controls are hidden; leaving playback takes two Back presses within two seconds
+- Playback background artwork, on by default: the detail page and the Home hero reuse the cover already on screen as the opening frame
 
 ### Subtitles and danmaku
 
-- Text subtitles: SRT, VTT, and ASS / SSA, with size, position, and color.
-- Image subtitles: PGS, DVB, and VobSub.
-- The current subtitle can be nudged earlier or later while playing.
-- ASSRT can be connected as an online subtitle source.
-- Danmaku follows the film clock, with automatic matching, manual search, style, and a timing offset.
-- A compatible danmaku service can be added, including setup from a phone.
+- Text subtitles SRT, VTT, and ASS / SSA with size, position, and color; dual-language subtitles can use separate colors
+- Image subtitles PGS, DVB, and VobSub
+- Nudge the current subtitle earlier or later while playing, or search ASSRT online subtitles with your own key
+- Danmaku follows the film clock, using the official Dandanplay source or a custom one
+- Automatic matching or manual search, with style, density, and timing offset; matches are remembered across episodes
+
+### Network and proxy
+
+- A global proxy forwards Emby, danmaku, and app requests, with per-line or per-danmaku overrides
+- An HTTP / SOCKS proxy and a custom name on each line
+- Proxy, danmaku service, and icon library addresses can all be filled by scanning a code
 
 ### App
 
-- Appearance themes, and three text sizes.
-- Interface languages: system, Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, French, and German.
-- Clear video, image, subtitle, danmaku, and update caches by category. Sign-in and settings stay.
-- Check GitHub for a stable release and install it over the current app.
+- Three interface text sizes; the language can follow the system, with Simplified and Traditional Chinese, English, Japanese, Korean, Spanish, French, and German
+- Power-saving mode: smaller artwork and fewer parallel loads for low-end devices
+- Clear video, image, subtitle, danmaku, and update caches by category without touching sign-in or settings
+- Check for updates at launch (can be turned off); installing over the app keeps your signed-in servers
+- Open-source licenses on the About page
+
+## Media formats
+
+The app lets the TV or box play the original file directly and leaves conversion to Emby when the device cannot handle it. Dolby Vision playback requires a TV that supports it.
+
+| Type | Supported | Notes |
+|---|---|---|
+| Video | H.264 / AVC | MP4, M4V, MOV, MKV, TS; the most compatible option |
+| Video | HEVC / H.265 | MP4, MKV, TS; common 4K, Main10, and HDR files usually work |
+| Video | AV1, VP8 / VP9 | MP4, MKV, WebM; requires the matching decoder on the device |
+| Picture | SDR, HDR10, HDR10+, HLG | Requires the matching HDR display mode |
+| Dolby Vision | Profile 5, 8 / 8.1 | The picture is passed to the device and may trigger the TV's Dolby Vision mode |
+| Dolby Vision | Profile 7, 8.4, 4 | Depends on the file and device; some Profile 7 files play as HDR10 |
+| Audio | AAC, AC-3, E-AC-3, MP3, FLAC, Opus, Vorbis, DTS, DTS-HD, TrueHD, ALAC, WMA, PCM | Atmos and DTS:X output depends on the device and the HDMI / eARC link |
+| Container | MP4, M4V, MOV, MKV, WebM, TS, HLS | The extension is only the wrapper; the tracks inside still affect direct play |
+
+VC-1, WMV3, ProRes, 12-bit or 4:2:2 / 4:4:4 HEVC, and ISO, BDMV, RM, or RMVB are more likely to be transcoded. Conversion also kicks in when resolution, bitrate, frame rate, audio, or subtitles exceed what the device can handle.
+
+After conversion, Dolby Vision or HDR10+ dynamic effects may not be preserved. Open "Media Info" during playback to see whether the current route is direct play, direct stream, or server conversion.
 
 ## Which APK
 
