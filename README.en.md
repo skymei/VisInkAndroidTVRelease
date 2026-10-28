@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screens/immersive.jpg" alt="Immersive carousel" width="44%" />
+  <img src="docs/screens/immersive.jpg" alt="Immersive carousel" width="960" />
 </p>
 <p align="center"><sub>Immersive carousel after idle</sub></p>
 

@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screens/immersive.jpg" alt="沉浸轮播" width="44%" />
+  <img src="docs/screens/immersive.jpg" alt="沉浸轮播" width="960" />
 </p>
 <p align="center"><sub>空闲后进入沉浸轮播</sub></p>
 
